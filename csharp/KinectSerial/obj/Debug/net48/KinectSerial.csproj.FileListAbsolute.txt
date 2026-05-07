@@ -11,3 +11,4 @@ C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\
 C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSe.AE05D00B.Up2Date
 C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.exe
 C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.pdb
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.sourcelink.json

@@ -12,9 +12,22 @@ int dir = 1;
 int speedValue = 80; // 0-255 from PC
 unsigned long lastStep = 0;
 
-int speedToDelay(int v) {
-  // v=0 => slow, v=255 => fast
-  return map(v, 0, 255, 200, 10);
+const int stepSize = 8; // 1 length per 8 values
+const int minDelay = 20;  // fastest
+const int maxDelay = 200; // slowest
+
+const uint8_t hueStart = 160; // blue
+const uint8_t hueEnd = 0;     // red
+
+int lengthFromValue(int v) {
+  int step = v / stepSize;
+  int maxLen = min(NUM_LEDS, 1 + (255 / stepSize));
+  return constrain(1 + step, 1, maxLen);
+}
+
+int delayFromLength(int len) {
+  int maxLen = min(NUM_LEDS, 1 + (255 / stepSize));
+  return map(len, 1, maxLen, minDelay, maxDelay);
 }
 
 void setup() {
@@ -29,13 +42,21 @@ void loop() {
     speedValue = Serial.read();
   }
 
-  int delayMs = speedToDelay(speedValue);
+  int snakeLen = lengthFromValue(speedValue);
+  int delayMs = delayFromLength(snakeLen);
+  uint8_t hue = map(speedValue, 0, 255, hueStart, hueEnd);
+  CRGB color = CHSV(hue, 255, 255);
   unsigned long now = millis();
   if (now - lastStep >= (unsigned long)delayMs) {
     lastStep = now;
 
     FastLED.clear();
-    leds[head] = CRGB::Green;
+    for (int i = 0; i < snakeLen; i++) {
+      int idx = head - dir * i;
+      if (idx >= 0 && idx < NUM_LEDS) {
+        leds[idx] = color;
+      }
+    }
     FastLED.show();
 
     head += dir;

@@ -16,11 +16,8 @@ const int stepSize = 8; // 1 length per 8 values
 const int minDelay = 20;  // fastest
 const int maxDelay = 200; // slowest
 
-CRGB palette[] = {
-  CRGB::Green, CRGB::Blue, CRGB::Red, CRGB::Yellow,
-  CRGB::Cyan, CRGB::Magenta, CRGB::Orange, CRGB::White
-};
-const int paletteSize = sizeof(palette) / sizeof(palette[0]);
+const uint8_t hueStart = 160; // blue
+const uint8_t hueEnd = 0;     // red
 
 int lengthFromValue(int v) {
   int step = v / stepSize;
@@ -47,7 +44,8 @@ void loop() {
 
   int snakeLen = lengthFromValue(speedValue);
   int delayMs = delayFromLength(snakeLen);
-  int colorIndex = (speedValue / stepSize) % paletteSize;
+  uint8_t hue = map(speedValue, 0, 255, hueStart, hueEnd);
+  CRGB color = CHSV(hue, 255, 255);
   unsigned long now = millis();
   if (now - lastStep >= (unsigned long)delayMs) {
     lastStep = now;
@@ -56,7 +54,7 @@ void loop() {
     for (int i = 0; i < snakeLen; i++) {
       int idx = head - dir * i;
       if (idx >= 0 && idx < NUM_LEDS) {
-        leds[idx] = palette[colorIndex];
+        leds[idx] = color;
       }
     }
     FastLED.show();

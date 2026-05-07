@@ -1,0 +1,13 @@
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\bin\Debug\net48\KinectSerial.exe.config
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\bin\Debug\net48\KinectSerial.exe
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\bin\Debug\net48\KinectSerial.pdb
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\bin\Debug\net48\Microsoft.Kinect.dll
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\bin\Debug\net48\Microsoft.Kinect.xml
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.csproj.AssemblyReference.cache
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.AssemblyInfoInputs.cache
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.AssemblyInfo.cs
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.csproj.CoreCompileInputs.cache
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSe.AE05D00B.Up2Date
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.exe
+C:\Users\jpgft\OneDrive\Desktop\Kinect Arduino Projects\csharp\KinectSerial\obj\Debug\net48\KinectSerial.pdb

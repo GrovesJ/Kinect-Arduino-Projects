@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yInsnXnl8fA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jpgft\\OneDrive\\Desktop\\Kinect Arduino Projects\\csharp\\KinectSerial\\KinectSerial.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jpgft\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\jpgft\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
